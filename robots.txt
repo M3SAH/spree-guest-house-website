@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://m3sah.github.io/spree-guest-house-website/sitemap.xml

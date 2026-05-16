@@ -2,17 +2,18 @@
 
 :root {
     --site-header-h: 76px;
-    --charcoal: #1e211b;
-    --charcoal-2: #151711;
-    --cream: #f7f0e5;
-    --gold: #b88a3d;
-    --gold-dark: #9d6d28;
-    --sage: #5f715d;
+    --charcoal: #1F4037;
+    --deep-green: #1F4037;
+    --charcoal-2: #172E26;
+    --cream: #F7F4ED;
+    --gold: #D4A64A;
+    --gold-dark: #A57A34;
+    --sage: #7A9B8E;
     --white: #ffffff;
-    --muted: rgba(30, 33, 27, 0.68);
-    --line: rgba(30, 33, 27, 0.1);
-    --shadow-soft: 0 18px 50px rgba(30, 33, 27, 0.09);
-    --shadow-luxury: 0 26px 70px rgba(30, 33, 27, 0.22);
+    --muted: rgba(31, 64, 55, 0.72);
+    --line: rgba(47, 93, 80, 0.14);
+    --shadow-soft: 0 18px 50px rgba(31, 64, 55, 0.09);
+    --shadow-luxury: 0 26px 70px rgba(15, 24, 20, 0.22);
     --font-serif: "Playfair Display", serif;
     --font-sans: "Inter", sans-serif;
 }
@@ -119,7 +120,7 @@ button {
 }
 
 .soft-green {
-    background: rgba(95, 113, 93, 0.12);
+    background: rgba(122, 155, 142, 0.14);
 }
 
 .dark {
@@ -191,9 +192,9 @@ p {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #c79b4d, var(--gold-dark));
+    background: linear-gradient(135deg, var(--gold), var(--deep-green));
     color: var(--white);
-    box-shadow: 0 16px 35px rgba(184, 138, 61, 0.28);
+    box-shadow: 0 16px 35px rgba(212, 166, 74, 0.28);
 }
 
 .btn-secondary {
@@ -214,14 +215,14 @@ p {
     inset: 0 0 auto;
     z-index: 1100;
     min-height: var(--site-header-h);
-    background: rgba(30, 33, 27, 0.42);
+    background: rgba(31, 64, 55, 0.42);
     color: var(--white);
     backdrop-filter: blur(14px);
     transition: background 250ms ease, box-shadow 250ms ease;
 }
 
 .site-header.scrolled {
-    background: rgba(30, 33, 27, 0.93);
+    background: rgba(15, 25, 20, 0.95);
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
 }
 
@@ -237,9 +238,15 @@ p {
 
 .brand {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     flex: 0 0 auto;
     line-height: 1;
+}
+
+.brand img {
+    display: block;
+    max-height: 52px;
+    width: auto;
 }
 
 .brand span {
@@ -555,7 +562,7 @@ input:focus,
 select:focus,
 textarea:focus {
     border-color: var(--gold);
-    box-shadow: 0 0 0 4px rgba(184, 138, 61, 0.15);
+    box-shadow: 0 0 0 4px rgba(212, 166, 74, 0.15);
 }
 
 input[type="checkbox"] {
@@ -690,7 +697,7 @@ textarea {
 .policy-card,
 .menu-card,
 .value-card {
-    border: 1px solid rgba(184, 138, 61, 0.2);
+    border: 1px solid rgba(212, 166, 74, 0.2);
     border-radius: 0.5rem;
     background: var(--white);
     box-shadow: var(--shadow-soft);
@@ -1221,7 +1228,7 @@ textarea {
 .events-card:hover {
     box-shadow:
         0 28px 70px rgba(30, 33, 27, 0.18),
-        0 0 0 1px rgba(184, 138, 61, 0.22);
+        0 0 0 1px rgba(212, 166, 74, 0.22);
 }
 
 .events-card:hover img {
@@ -1271,7 +1278,7 @@ textarea {
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    box-shadow: inset 0 0 0 1px rgba(184, 138, 61, 0.12);
+    box-shadow: inset 0 0 0 1px rgba(212, 166, 74, 0.12);
     pointer-events: none;
 }
 
@@ -1287,7 +1294,7 @@ textarea {
     width: 100%;
     min-height: 3.15rem;
     border-radius: 999px;
-    border: 1px solid rgba(184, 138, 61, 0.42);
+    border: 1px solid rgba(212, 166, 74, 0.42);
     background: var(--white);
     color: var(--charcoal);
     font-size: 0.82rem;
@@ -1311,7 +1318,7 @@ textarea {
     transform: translateY(-3px);
     border-color: var(--gold);
     color: var(--gold-dark);
-    box-shadow: 0 18px 40px rgba(184, 138, 61, 0.28);
+    box-shadow: 0 18px 40px rgba(212, 166, 74, 0.28);
     background: rgba(255, 255, 255, 0.98);
 }
 
@@ -1880,7 +1887,7 @@ details p {
     .nav-links a:hover,
     .nav-links a:focus-visible,
     .nav-links a.active {
-        background: rgba(184, 138, 61, 0.14);
+        background: rgba(212, 166, 74, 0.14);
         color: var(--gold);
     }
 
@@ -1891,16 +1898,16 @@ details p {
         border: 0;
         border-radius: 999px;
         border-bottom: 0;
-        background: linear-gradient(135deg, #c79b4d, var(--gold-dark));
+        background: linear-gradient(135deg, var(--gold), var(--deep-green));
         color: var(--white);
         font-size: 0.78rem;
         letter-spacing: 0.12em;
-        box-shadow: 0 16px 35px rgba(184, 138, 61, 0.32);
+        box-shadow: 0 16px 35px rgba(212, 166, 74, 0.32);
     }
 
     .nav-links a.nav-links-book:hover,
     .nav-links a.nav-links-book:focus-visible {
-        background: linear-gradient(135deg, #d4a85a, #a65f22);
+        background: linear-gradient(135deg, var(--gold), var(--deep-green));
         color: var(--white);
     }
 

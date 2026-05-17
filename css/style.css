@@ -1733,6 +1733,29 @@ details p {
     transform: scale(1.06);
 }
 
+.facebook {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 78px;
+    z-index: 60;
+    display: inline-flex;
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background-color: #1877f2;
+    color: #fff;
+    font-size: 1.2rem;
+    text-indent: 0;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.26);
+    transition: transform 200ms ease;
+}
+
+.facebook:hover {
+    transform: scale(1.06);
+}
+
 .toast {
     position: fixed;
     right: 1rem;
